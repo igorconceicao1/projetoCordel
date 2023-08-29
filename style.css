@@ -1,5 +1,8 @@
 @charset "UFT-8";
 
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Indie+Flower&display=swap');
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,26 +12,32 @@
     --cor0:black;
     --cor1:white;
     --cor2: #abd1b578;
+
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte_principal: 'Black Ops One', cursive;
+    --fonte_escrita: 'Indie Flower', cursive;
 }
 
 body {
     min-height: 100vh;
     background-color: var(--cor2);
+    font-family: var(--fonte1);
 }
 
 header {
     background-color: var(--cor0);
     color: var(--cor1);
     text-align: center;
-    padding: 50px;
+    padding-bottom: 50px;
 
 }
 
 header > h1 {
-    font-size: 3em;
+    font-size: 10vw;
     font-weight: bolder;
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte_principal);
 }
 
 header > p {
@@ -49,9 +58,10 @@ header a:hover, footer a:hover {
 
 main section {
     padding: 10vh 0;
-    line-height: 2em;
+    line-height: 5vw;
     width: 300px;
     padding-left: 40px;
+    font-family: var(--fonte_escrita);
 }
 
 section.normal {
@@ -67,7 +77,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: var(--cor0);
-    width: 200px;
+    display: inline-block;
+    padding: 5px;
 }
 
 footer {
