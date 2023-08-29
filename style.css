@@ -71,6 +71,7 @@ section.normal {
 }
 
 section > p {
+    font-size: 5vw;
     padding-bottom: 2em;
 }
 
