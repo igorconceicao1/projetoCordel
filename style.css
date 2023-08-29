@@ -8,6 +8,12 @@
 :root {
     --cor0:black;
     --cor1:white;
+    --cor2: #abd1b578;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--cor2);
 }
 
 header {
@@ -21,6 +27,8 @@ header {
 header > h1 {
     font-size: 3em;
     font-weight: bolder;
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
 header > p {
@@ -28,24 +36,43 @@ header > p {
     font-weight: normal;
 }
 
-header > p > a {
+header a, footer a {
     text-decoration: none;
     color: var(--cor1);
     font-weight: bolder;
 
 }
 
-main {
-    border: 1px solid red;
+header a:hover, footer a:hover {
+    text-decoration: underline;
 }
 
-main section p  {
-    border: 1px solid red;
+main section {
+    padding: 10vh 0;
     line-height: 2em;
     width: 300px;
+    padding-left: 40px;
+}
+
+section.normal {
+    background-color: var(--cor1);
+    color: var(--cor0);
+}
+
+section.imagem {
+    background-color: gray;
+    color: var(--cor1);
+
+}
+
+section.imagem > p {
+    background-color: var(--cor0);
+    width: 200px;
 }
 
 footer {
     background-color:var(--cor0);
     color: var(--cor1);
+    text-align: center;
+    padding: 10px;
 }
