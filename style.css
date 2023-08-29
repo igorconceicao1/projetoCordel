@@ -39,8 +39,13 @@ main {
     border: 1px solid red;
 }
 
-main p {
+main section p  {
     border: 1px solid red;
-
+    line-height: 2em;
     width: 300px;
+}
+
+footer {
+    background-color:var(--cor0);
+    color: var(--cor1);
 }
